@@ -1,0 +1,6 @@
+@startuml
+interface IOrderRepository {
+    GetByCustomer(customerId:int) : IEnumerable<Order>
+}
+"IRepository`1" "<Order>" <|-- IOrderRepository
+@enduml

@@ -1,0 +1,110 @@
+services:
+  orderapi:
+    build:
+      context: /Volumes/T7 Touch/suli/online_retailer_microservices_assignment
+      dockerfile: OrderApi/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: OrderApi
+      target: base
+    container_name: OrderApi
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: orderapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net6.0/OrderApi.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 8080
+      target: 80
+    - published: 8443
+      target: 443
+    tty: true
+    volumes:
+    - /Volumes/T7 Touch/suli/online_retailer_microservices_assignment/OrderApi:/app:rw
+    - /Users/belakovacs/vsdbg/vs2017u5:/remote_debugger:rw
+    - /Users/belakovacs/.aspnet/https:/root/.aspnet/https:ro
+    - /Users/belakovacs/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+    - /Users/belakovacs/.nuget/packages:/root/.nuget/packages:ro
+    - /Volumes/T7 Touch/suli/online_retailer_microservices_assignment:/src:rw
+  productapi:
+    build:
+      context: /Volumes/T7 Touch/suli/online_retailer_microservices_assignment
+      dockerfile: ProductApi/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: ProductApi
+      target: base
+    container_name: ProductApi
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: productapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net6.0/ProductApi.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 5080
+      target: 80
+    - published: 5443
+      target: 443
+    tty: true
+    volumes:
+    - /Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi:/app:rw
+    - /Users/belakovacs/vsdbg/vs2017u5:/remote_debugger:rw
+    - /Users/belakovacs/.aspnet/https:/root/.aspnet/https:ro
+    - /Users/belakovacs/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+    - /Users/belakovacs/.nuget/packages:/root/.nuget/packages:ro
+    - /Volumes/T7 Touch/suli/online_retailer_microservices_assignment:/src:rw
+  userapi:
+    build:
+      context: /Volumes/T7 Touch/suli/online_retailer_microservices_assignment
+      dockerfile: UserApi/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: UserApi
+      target: base
+    container_name: UserApi
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: userapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net6.0/UserApi.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 6080
+      target: 80
+    - published: 6443
+      target: 443
+    tty: true
+    volumes:
+    - /Volumes/T7 Touch/suli/online_retailer_microservices_assignment/UserApi:/app:rw
+    - /Users/belakovacs/vsdbg/vs2017u5:/remote_debugger:rw
+    - /Users/belakovacs/.aspnet/https:/root/.aspnet/https:ro
+    - /Users/belakovacs/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+    - /Users/belakovacs/.nuget/packages:/root/.nuget/packages:ro
+    - /Volumes/T7 Touch/suli/online_retailer_microservices_assignment:/src:rw
+version: '3.4'

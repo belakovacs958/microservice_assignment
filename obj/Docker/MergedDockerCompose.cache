@@ -1,0 +1,50 @@
+services:
+  orderapi:
+    build:
+      context: /Volumes/T7 Touch/suli/online_retailer_microservices_assignment
+      dockerfile: OrderApi/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: orderapi
+    ports:
+    - published: 8080
+      target: 80
+    - published: 8443
+      target: 443
+    volumes:
+    - /Users/belakovacs/.aspnet/https:/root/.aspnet/https:ro
+    - /Users/belakovacs/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+  productapi:
+    build:
+      context: /Volumes/T7 Touch/suli/online_retailer_microservices_assignment
+      dockerfile: ProductApi/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: productapi
+    ports:
+    - published: 5080
+      target: 80
+    - published: 5443
+      target: 443
+    volumes:
+    - /Users/belakovacs/.aspnet/https:/root/.aspnet/https:ro
+    - /Users/belakovacs/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+  userapi:
+    build:
+      context: /Volumes/T7 Touch/suli/online_retailer_microservices_assignment
+      dockerfile: UserApi/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: userapi
+    ports:
+    - published: 6080
+      target: 80
+    - published: 6443
+      target: 443
+    volumes:
+    - /Users/belakovacs/.aspnet/https:/root/.aspnet/https:ro
+    - /Users/belakovacs/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

@@ -1,0 +1,13 @@
+@startuml
+class OrderRepository {
+    - <<readonly>> db : OrderApiContext
+    + OrderRepository(context:OrderApiContext)
+    + Add(entity:Order) : Order
+    + Edit(entity:Order) : void
+    + Get(id:int) : Order
+    + GetAll() : IEnumerable<Order>
+    + GetByCustomer(customerId:int) : IEnumerable<Order>
+    + Remove(id:int) : void
+}
+IOrderRepository <|-- OrderRepository
+@enduml

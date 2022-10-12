@@ -1,0 +1,7 @@
+@startuml
+class ProductConverter {
+    + Convert(sharedProduct:ProductDto) : Product
+    + Convert(hiddenProduct:Product) : ProductDto
+}
+"IConverter`2" "<Product,ProductDto>" <|-- ProductConverter
+@enduml

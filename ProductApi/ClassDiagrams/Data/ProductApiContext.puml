@@ -1,0 +1,7 @@
+@startuml
+class ProductApiContext {
+    + ProductApiContext(options:DbContextOptions<ProductApiContext>)
+    + Products : DbSet<Product> <<get>> <<set>>
+}
+DbContext <|-- ProductApiContext
+@enduml

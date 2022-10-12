@@ -1,0 +1,6 @@
+@startuml
+interface "IConverter`2"<T,U> {
+    Convert(model:U) : T
+    Convert(model:T) : U
+}
+@enduml

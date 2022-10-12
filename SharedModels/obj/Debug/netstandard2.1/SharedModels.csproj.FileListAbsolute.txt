@@ -1,0 +1,30 @@
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/SharedModels/bin/Debug/netstandard2.1/SharedModels.deps.json
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/SharedModels/bin/Debug/netstandard2.1/SharedModels.dll
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/SharedModels/bin/Debug/netstandard2.1/SharedModels.pdb
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/SharedModels/obj/Debug/netstandard2.1/SharedModels.csproj.AssemblyReference.cache
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/SharedModels/obj/Debug/netstandard2.1/SharedModels.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/SharedModels/obj/Debug/netstandard2.1/SharedModels.AssemblyInfoInputs.cache
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/SharedModels/obj/Debug/netstandard2.1/SharedModels.AssemblyInfo.cs
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/SharedModels/obj/Debug/netstandard2.1/SharedModels.csproj.CoreCompileInputs.cache
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/SharedModels/obj/Debug/netstandard2.1/SharedModels.dll
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/SharedModels/obj/Debug/netstandard2.1/SharedModels.pdb
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/SharedModels/bin/Debug/netstandard2.1/SharedModels.deps.json
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/SharedModels/bin/Debug/netstandard2.1/SharedModels.dll
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/SharedModels/bin/Debug/netstandard2.1/SharedModels.pdb
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/SharedModels/obj/Debug/netstandard2.1/SharedModels.csproj.AssemblyReference.cache
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/SharedModels/obj/Debug/netstandard2.1/SharedModels.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/SharedModels/obj/Debug/netstandard2.1/SharedModels.AssemblyInfoInputs.cache
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/SharedModels/obj/Debug/netstandard2.1/SharedModels.AssemblyInfo.cs
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/SharedModels/obj/Debug/netstandard2.1/SharedModels.csproj.CoreCompileInputs.cache
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/SharedModels/obj/Debug/netstandard2.1/SharedModels.dll
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/SharedModels/obj/Debug/netstandard2.1/SharedModels.pdb
+/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/bin/Debug/netstandard2.1/SharedModels.deps.json
+/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/bin/Debug/netstandard2.1/SharedModels.dll
+/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/bin/Debug/netstandard2.1/SharedModels.pdb
+/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/obj/Debug/netstandard2.1/SharedModels.csproj.AssemblyReference.cache
+/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/obj/Debug/netstandard2.1/SharedModels.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/obj/Debug/netstandard2.1/SharedModels.AssemblyInfoInputs.cache
+/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/obj/Debug/netstandard2.1/SharedModels.AssemblyInfo.cs
+/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/obj/Debug/netstandard2.1/SharedModels.csproj.CoreCompileInputs.cache
+/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/obj/Debug/netstandard2.1/SharedModels.dll
+/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/obj/Debug/netstandard2.1/SharedModels.pdb

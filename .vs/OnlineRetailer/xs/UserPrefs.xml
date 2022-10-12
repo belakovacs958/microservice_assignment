@@ -1,0 +1,29 @@
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{1AB07F84-B486-4705-9F0B-425D2EE530E8}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OnlineRetailer" expanded="True">
+            <Node name="OrderApi" expanded="True" />
+            <Node name="ProductApi" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <DisabledProjects>
+    <String>../UserApi/UserApi.csproj</String>
+    <String>../NotifyCustomerService/NotifyCustomerService.csproj</String>
+    <String>../NotifyCustomer/NotifyCustomer.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.ItemProperties.ProductApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+</Properties>

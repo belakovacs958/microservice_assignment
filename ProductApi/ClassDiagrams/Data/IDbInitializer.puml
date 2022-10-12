@@ -1,0 +1,5 @@
+@startuml
+interface IDbInitializer {
+    Initialize(context:ProductApiContext) : void
+}
+@enduml

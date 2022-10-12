@@ -1,0 +1,6 @@
+@startuml
+class DbInitializer {
+    + Initialize(context:ProductApiContext) : void
+}
+IDbInitializer <|-- DbInitializer
+@enduml

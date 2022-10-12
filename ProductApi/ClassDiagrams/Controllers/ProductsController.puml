@@ -1,0 +1,13 @@
+@startuml
+class ProductsController {
+    - <<readonly>> repository : IRepository<Product>
+    - <<readonly>> productConverter : IConverter<Product, ProductDto>
+    + ProductsController(repos:IRepository<Product>, converter:IConverter<Product,ProductDto>)
+    + Get() : IEnumerable<ProductDto>
+    + Get(id:int) : IActionResult
+    + Post(productDto:ProductDto) : IActionResult
+    + Put(id:int, productDto:ProductDto) : IActionResult
+    + Delete(id:int) : IActionResult
+}
+ControllerBase <|-- ProductsController
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+interface "IRepository`1"<T> {
+    GetAll() : IEnumerable<T>
+    Get(id:int) : T
+    Add(entity:T) : T
+    Edit(entity:T) : void
+    Remove(id:int) : void
+}
+@enduml

@@ -1,0 +1,108 @@
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/bin/Debug/net6.0/appsettings.Development.json
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/bin/Debug/net6.0/appsettings.json
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/bin/Debug/net6.0/ProductApi
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/bin/Debug/net6.0/ProductApi.deps.json
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/bin/Debug/net6.0/ProductApi.runtimeconfig.json
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/bin/Debug/net6.0/ProductApi.dll
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/bin/Debug/net6.0/ProductApi.pdb
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/bin/Debug/net6.0/EasyNetQ.dll
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/bin/Debug/net6.0/Microsoft.OpenApi.dll
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/bin/Debug/net6.0/RabbitMQ.Client.dll
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/bin/Debug/net6.0/SharedModels.dll
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/bin/Debug/net6.0/SharedModels.pdb
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/obj/Debug/ProductApi.csproj.AssemblyReference.cache
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/obj/Debug/ProductApi.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/obj/Debug/ProductApi.AssemblyInfoInputs.cache
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/obj/Debug/ProductApi.AssemblyInfo.cs
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/obj/Debug/ProductApi.csproj.CoreCompileInputs.cache
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/obj/Debug/ProductApi.MvcApplicationPartsAssemblyInfo.cs
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/obj/Debug/ProductApi.MvcApplicationPartsAssemblyInfo.cache
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/obj/Debug/staticwebassets.build.json
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/obj/Debug/staticwebassets.development.json
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/obj/Debug/scopedcss/bundle/ProductApi.styles.css
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/obj/Debug/ProductApi.csproj.CopyComplete
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/obj/Debug/ProductApi.dll
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/obj/Debug/refint/ProductApi.dll
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/obj/Debug/ProductApi.pdb
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/obj/Debug/ProductApi.genruntimeconfig.cache
+/Volumes/T7/VisualStudioProjects/OnlineRetailer_Choreography/ProductApi/obj/Debug/ref/ProductApi.dll
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/bin/Debug/net6.0/appsettings.Development.json
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/bin/Debug/net6.0/appsettings.json
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/bin/Debug/net6.0/ProductApi
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/bin/Debug/net6.0/ProductApi.deps.json
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/bin/Debug/net6.0/ProductApi.runtimeconfig.json
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/bin/Debug/net6.0/ProductApi.dll
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/bin/Debug/net6.0/ProductApi.pdb
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/bin/Debug/net6.0/EasyNetQ.dll
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/bin/Debug/net6.0/Microsoft.OpenApi.dll
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/bin/Debug/net6.0/RabbitMQ.Client.dll
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/bin/Debug/net6.0/SharedModels.dll
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/bin/Debug/net6.0/SharedModels.pdb
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/obj/Debug/ProductApi.csproj.AssemblyReference.cache
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/obj/Debug/ProductApi.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/obj/Debug/ProductApi.AssemblyInfoInputs.cache
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/obj/Debug/ProductApi.AssemblyInfo.cs
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/obj/Debug/ProductApi.csproj.CoreCompileInputs.cache
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/obj/Debug/ProductApi.MvcApplicationPartsAssemblyInfo.cs
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/obj/Debug/ProductApi.MvcApplicationPartsAssemblyInfo.cache
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/obj/Debug/staticwebassets.build.json
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/obj/Debug/staticwebassets.development.json
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/obj/Debug/scopedcss/bundle/ProductApi.styles.css
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/obj/Debug/ProductApi.csproj.CopyComplete
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/obj/Debug/ProductApi.dll
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/obj/Debug/refint/ProductApi.dll
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/obj/Debug/ProductApi.pdb
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/obj/Debug/ProductApi.genruntimeconfig.cache
+/Volumes/T7 Touch/suli/online_retailer_microservices_assignment/ProductApi/obj/Debug/ref/ProductApi.dll
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/bin/Debug/net6.0/appsettings.Development.json
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/bin/Debug/net6.0/appsettings.json
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/bin/Debug/net6.0/ProductApi
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/bin/Debug/net6.0/ProductApi.deps.json
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/bin/Debug/net6.0/ProductApi.runtimeconfig.json
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/bin/Debug/net6.0/ProductApi.dll
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/bin/Debug/net6.0/ProductApi.pdb
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/bin/Debug/net6.0/EasyNetQ.dll
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/bin/Debug/net6.0/Microsoft.OpenApi.dll
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/bin/Debug/net6.0/RabbitMQ.Client.dll
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/bin/Debug/net6.0/SharedModels.dll
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/bin/Debug/net6.0/SharedModels.pdb
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/obj/Debug/ProductApi.csproj.AssemblyReference.cache
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/obj/Debug/ProductApi.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/obj/Debug/ProductApi.AssemblyInfoInputs.cache
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/obj/Debug/ProductApi.AssemblyInfo.cs
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/obj/Debug/ProductApi.csproj.CoreCompileInputs.cache
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/obj/Debug/ProductApi.MvcApplicationPartsAssemblyInfo.cs
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/obj/Debug/ProductApi.MvcApplicationPartsAssemblyInfo.cache
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/obj/Debug/staticwebassets.build.json
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/obj/Debug/staticwebassets.development.json
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/obj/Debug/scopedcss/bundle/ProductApi.styles.css
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/obj/Debug/ProductApi.csproj.CopyComplete
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/obj/Debug/ProductApi.dll
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/obj/Debug/refint/ProductApi.dll
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/obj/Debug/ProductApi.pdb
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/obj/Debug/ProductApi.genruntimeconfig.cache
+/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/obj/Debug/ref/ProductApi.dll

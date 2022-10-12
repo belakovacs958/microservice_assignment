@@ -1,0 +1,11 @@
+@startuml
+class MessageListener {
+    provider : IServiceProvider
+    connectionString : string
+    bus : IBus
+    + MessageListener(provider:IServiceProvider, connectionString:string)
+    + Start() : void
+    - HandleOrderCreated(message:OrderCreatedMessage) : void
+    - ProductItemsAvailable(orderLines:IList<OrderLine>, productRepos:IRepository<Product>) : bool
+}
+@enduml

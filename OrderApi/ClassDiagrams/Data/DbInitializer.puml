@@ -1,0 +1,6 @@
+@startuml
+class DbInitializer {
+    + Initialize(context:OrderApiContext) : void
+}
+IDbInitializer <|-- DbInitializer
+@enduml

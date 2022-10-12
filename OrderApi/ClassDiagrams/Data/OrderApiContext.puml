@@ -1,0 +1,7 @@
+@startuml
+class OrderApiContext {
+    + OrderApiContext(options:DbContextOptions<OrderApiContext>)
+    + Orders : DbSet<Order> <<get>> <<set>>
+}
+DbContext <|-- OrderApiContext
+@enduml

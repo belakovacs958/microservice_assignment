@@ -1,0 +1,14 @@
+@startuml
+class OrdersController {
+    repository : IOrderRepository
+    messagePublisher : IMessagePublisher
+    + OrdersController(repos:IRepository<Order>, publisher:IMessagePublisher)
+    + Get() : IEnumerable<Order>
+    + Get(id:int) : IActionResult
+    + Post(order:Order) : IActionResult
+    + Cancel(id:int) : IActionResult
+    + Ship(id:int) : IActionResult
+    + Pay(id:int) : IActionResult
+}
+ControllerBase <|-- OrdersController
+@enduml

@@ -1,0 +1,5 @@
+@startuml
+interface IMessagePublisher {
+    PublishOrderCreatedMessage(customerId:int?, orderId:int, orderLines:IList<OrderLine>) : void
+}
+@enduml

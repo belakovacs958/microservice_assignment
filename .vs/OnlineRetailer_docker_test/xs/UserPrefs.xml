@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{733B275E-C8D4-46F7-9500-8E195050164E}|Default">
+  <MonoDevelop.Ide.ItemProperties.ProductApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OnlineRetailer_docker_test" expanded="True">
+            <Node name="OrderApi" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+            <Node name="ProductApi" expanded="True" />
+            <Node name="UserApi" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

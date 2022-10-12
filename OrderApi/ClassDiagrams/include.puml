@@ -1,0 +1,17 @@
+@startuml
+!include ./Program.puml
+!include ./Controllers/OrdersController.puml
+!include ./Data/DbInitializer.puml
+!include ./Data/IDbInitializer.puml
+!include ./Data/IOrderRepository.puml
+!include ./Data/IRepository.puml
+!include ./Data/OrderApiContext.puml
+!include ./Data/OrderRepository.puml
+!include ./Infrastructure/IMessagePublisher.puml
+!include ./Infrastructure/MessageListener.puml
+!include ./Infrastructure/MessagePublisher.puml
+!include ./obj/Debug/.NETCoreApp,Version=v6.0.AssemblyAttributes.puml
+!include ./obj/Debug/OrderApi.AssemblyInfo.puml
+!include ./obj/Debug/OrderApi.GlobalUsings.g.puml
+!include ./obj/Debug/OrderApi.MvcApplicationPartsAssemblyInfo.puml
+@enduml

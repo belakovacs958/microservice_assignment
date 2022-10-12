@@ -1,0 +1,9 @@
+@startuml
+class Product {
+    + Id : int <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Price : decimal <<get>> <<set>>
+    + ItemsInStock : int <<get>> <<set>>
+    + ItemsReserved : int <<get>> <<set>>
+}
+@enduml

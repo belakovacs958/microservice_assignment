@@ -1,0 +1,10 @@
+@startuml
+class MessagePublisher {
+    bus : IBus
+    + MessagePublisher(connectionString:string)
+    + Dispose() : void
+    + PublishOrderCreatedMessage(customerId:int?, orderId:int, orderLines:IList<OrderLine>) : void
+}
+IMessagePublisher <|-- MessagePublisher
+IDisposable <|-- MessagePublisher
+@enduml

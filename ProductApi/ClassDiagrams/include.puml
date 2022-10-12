@@ -1,0 +1,17 @@
+@startuml
+!include ./Program.puml
+!include ./Controllers/ProductsController.puml
+!include ./Data/DbInitializer.puml
+!include ./Data/IDbInitializer.puml
+!include ./Data/IRepository.puml
+!include ./Data/ProductApiContext.puml
+!include ./Data/ProductRepository.puml
+!include ./Infrastructure/MessageListener.puml
+!include ./Models/IConverter.puml
+!include ./Models/Product.puml
+!include ./Models/ProductConverter.puml
+!include ./obj/Debug/.NETCoreApp,Version=v6.0.AssemblyAttributes.puml
+!include ./obj/Debug/ProductApi.AssemblyInfo.puml
+!include ./obj/Debug/ProductApi.GlobalUsings.g.puml
+!include ./obj/Debug/ProductApi.MvcApplicationPartsAssemblyInfo.puml
+@enduml

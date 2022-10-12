@@ -1,0 +1,12 @@
+@startuml
+class ProductRepository {
+    - <<readonly>> db : ProductApiContext
+    + ProductRepository(context:ProductApiContext)
+    Add(entity:Product) : Product
+    Edit(entity:Product) : void
+    Get(id:int) : Product
+    GetAll() : IEnumerable<Product>
+    Remove(id:int) : void
+}
+"IRepository`1" "<Product>" <|-- ProductRepository
+@enduml
