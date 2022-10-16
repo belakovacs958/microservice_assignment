@@ -1,5 +1,9 @@
-﻿<Properties StartupConfiguration="{733B275E-C8D4-46F7-9500-8E195050164E}|Default">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{733B275E-C8D4-46F7-9500-8E195050164E}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.ProductApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench>
     <Pads>
@@ -7,10 +11,12 @@
         <State name="__root__">
           <Node name="OnlineRetailer_docker_test" expanded="True">
             <Node name="OrderApi" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="Controllers" expanded="True" />
             </Node>
             <Node name="ProductApi" expanded="True" />
-            <Node name="UserApi" expanded="True" />
+            <Node name="UserApi" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -19,10 +25,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
