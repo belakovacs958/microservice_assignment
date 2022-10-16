@@ -86,10 +86,44 @@ namespace OrderApi.Controllers
         // with topic set to "cancelled".
         [HttpPut("{id}/cancel")]
         public IActionResult Cancel(int id)
-        {
+        { /*
+            if (id == null)
+            {
+                return BadRequest();
+            }
+
+            try
+            {
+                // Create a tentative order.
+                id. = Order.OrderStatus.tentative;
+                var newOrder = repository.Edit;
+
+                // Publish OrderStatusChangedMessage. 
+                messagePublisher.PublishOrderCreatedMessage(
+                    newOrder.customerId, newOrder.Id, newOrder.OrderLines);
+
+
+                // Wait until order status is "completed"
+                bool completed = false;
+                while (!completed)
+                {
+                    var tentativeOrder = repository.Get(newOrder.Id);
+                    if (tentativeOrder.Status == Order.OrderStatus.completed)
+                        completed = true;
+                    Thread.Sleep(100);
+                }
+
+                return CreatedAtRoute("GetOrder", new { id = newOrder.Id }, newOrder);
+            }
+            catch
+            {
+                return StatusCode(500, "An error happened. Try again.");
+            }
+
+            */
+
             throw new NotImplementedException();
 
-            // Add code to implement this method.
         }
 
         // PUT orders/5/ship
