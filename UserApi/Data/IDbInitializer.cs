@@ -1,7 +1,7 @@
-﻿namespace CustomerApi.Data
+﻿namespace UserApi.Data
 {
     public interface IDbInitializer
     {
-        void Initialize(CustomerApiContext context);
+        void Initialize(UserApiContext context);
     }
 }

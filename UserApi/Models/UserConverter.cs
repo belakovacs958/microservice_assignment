@@ -2,11 +2,11 @@
 
 namespace UserApi.Models
 {
-    public class UserConverter : IConverter<Customer, UserDto>
+    public class UserConverter : IConverter<User, UserDto>
     {
-        public Customer Convert(UserDto sharedUser)
+        public User Convert(UserDto sharedUser)
         {
-            return new Customer
+            return new User
             {
                 Id = sharedUser.Id,
                 Name = sharedUser.Name,
@@ -17,7 +17,7 @@ namespace UserApi.Models
                 CreditStanding = sharedUser.CreditStanding
             };
         }
-        public UserDto Convert(Customer hiddenUser)
+        public UserDto Convert(User hiddenUser)
         {
             return new UserDto
             {

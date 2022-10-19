@@ -7,7 +7,7 @@
     "OrderApi": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "http://localhost:53236",
+      "applicationUrl": "http://localhost:9959",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

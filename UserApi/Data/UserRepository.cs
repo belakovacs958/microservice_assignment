@@ -1,43 +1,44 @@
 ﻿using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
-using CustomerApi.Models;
+using UserApi.Models;
 using System;
-using CustomerApi.Data;
+using UserApi.Data;
+using UserApi.Data;
 
-namespace CustomerApi.Data
+namespace UserApi.Data
 {
-    public class CustomerRepository : IRepository<Customer>
+    public class UserRepository : IRepository<User>
     {
-        private readonly CustomerApiContext db;
+        private readonly UserApiContext db;
 
-        public CustomerRepository(CustomerApiContext context)
+        public UserRepository(UserApiContext context)
         {
             db = context;
         }
 
-        Customer IRepository<Customer>.Add(Customer entity)
+        User IRepository<User>.Add(User entity)
         {
-            var newCustomer = db.Customers.Add(entity).Entity;
+            var newUser = db.Users.Add(entity).Entity;
             db.SaveChanges();
-            return newCustomer;
+            return newUser;
         }
 
-        void IRepository<Customer>.Edit(Customer entity)
+        void IRepository<User>.Edit(User entity)
         {
             db.Entry(entity).State = EntityState.Modified;
             db.SaveChanges();
         }
 
-        Customer IRepository<Customer>.Get(int id)
+        User IRepository<User>.Get(int id)
         {
-            return db.Customers.FirstOrDefault(o => o.Id == id);
+            return db.Users.FirstOrDefault(o => o.Id == id);
         }
 
-        void IRepository<Customer>.Remove(int id)
+        void IRepository<User>.Remove(int id)
         {
-            var customer = db.Customers.FirstOrDefault(p => p.Id == id);
-            db.Customers.Remove(customer);
+            var user = db.Users.FirstOrDefault(p => p.Id == id);
+            db.Users.Remove(user);
             db.SaveChanges();
         }
     }

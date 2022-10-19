@@ -1,30 +1,30 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using CustomerApi.Models;
+using UserApi.Models;
 using System;
 
-namespace CustomerApi.Data
+namespace UserApi.Data
 {
     public class DbInitializer : IDbInitializer
     {
         // This method will create and seed the database.
-        public void Initialize(CustomerApiContext context)
+        public void Initialize(UserApiContext context)
         {
             context.Database.EnsureDeleted();
             context.Database.EnsureCreated();
 
-            // Look for any Products
-            if (context.Customers.Any())
+         
+            if (context.Users.Any())
             {
-                return;   // DB has been seeded
+                return;   
             }
 
-            List<Customer> customers = new List<Customer>
+            List<User> users = new List<User>
             {
-                new Customer { Id = 1, Name = "First Customer", Email = "test@mail.dk", Phone = 12345678, BillingAddress = "20 Test Street", ShippingAddress = "21 Test Street", CreditStanding = "test" }
+                new User { Id = 1, Name = "First Customer", Email = "test@mail.dk", Phone = 12345678, BillingAddress = "20 Test Street", ShippingAddress = "21 Test Street", CreditStanding = "test" }
             };
 
-            context.Customers.AddRange(customers);
+            context.Users.AddRange(users);
             context.SaveChanges();
         }
     }

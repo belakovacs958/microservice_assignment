@@ -1,15 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using CustomerApi.Models;
+using UserApi.Models;
 
-namespace CustomerApi.Data
+namespace UserApi.Data
 {
-    public class CustomerApiContext : DbContext
+    public class UserApiContext : DbContext
     {
-        public CustomerApiContext(DbContextOptions<CustomerApiContext> options)
+        public UserApiContext(DbContextOptions<UserApiContext> options)
             : base(options)
         {
         }
 
-        public DbSet<Customer> Customers { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
