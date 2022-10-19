@@ -1131,19 +1131,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/belakovacs/.nuget/packages/": {}
+    "/Users/oliverbanizs/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/ProductApi.csproj",
+      "projectUniqueName": "/Users/oliverbanizs/Projects/microservice_assignment/ProductApi/ProductApi.csproj",
       "projectName": "ProductApi",
-      "projectPath": "/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/ProductApi.csproj",
-      "packagesPath": "/Users/belakovacs/.nuget/packages/",
-      "outputPath": "/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/obj/",
+      "projectPath": "/Users/oliverbanizs/Projects/microservice_assignment/ProductApi/ProductApi.csproj",
+      "packagesPath": "/Users/oliverbanizs/.nuget/packages/",
+      "outputPath": "/Users/oliverbanizs/Projects/microservice_assignment/ProductApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/belakovacs/.nuget/NuGet/NuGet.Config"
+        "/Users/oliverbanizs/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -1155,8 +1155,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/SharedModels.csproj": {
-              "projectPath": "/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/SharedModels.csproj"
+            "/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/SharedModels.csproj": {
+              "projectPath": "/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/SharedModels.csproj"
             }
           }
         }

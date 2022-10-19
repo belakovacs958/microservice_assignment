@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xSbLq0cIICbyS2KtEoJHD+P2NjfnKh8K5Q+3v/p4V2q7oO40fYEYgDrMIMB0rGoscQiSRGIQ2JNXhopQth/HmA==",
+  "dgSpecHash": "0ayQuQzvFaoQ3bUX0LqhBljubjhiPAi9B4oS1h/sY+mUma2KiMA3rR3M1k283FZa5bSyR3a0w8V+Y7Viv/O33Q==",
   "success": true,
-  "projectFilePath": "/Volumes/T7 Touch/suli/online_retailer_docker_test/NotifyCustomer/NotifyCustomer.csproj",
+  "projectFilePath": "/Users/oliverbanizs/Projects/microservice_assignment/NotifyCustomer/NotifyCustomer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

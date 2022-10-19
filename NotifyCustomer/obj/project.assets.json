@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "/Users/belakovacs/.nuget/packages/": {}
+    "/Users/oliverbanizs/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/T7 Touch/suli/online_retailer_docker_test/NotifyCustomer/NotifyCustomer.csproj",
+      "projectUniqueName": "/Users/oliverbanizs/Projects/microservice_assignment/NotifyCustomer/NotifyCustomer.csproj",
       "projectName": "NotifyCustomer",
-      "projectPath": "/Volumes/T7 Touch/suli/online_retailer_docker_test/NotifyCustomer/NotifyCustomer.csproj",
-      "packagesPath": "/Users/belakovacs/.nuget/packages/",
-      "outputPath": "/Volumes/T7 Touch/suli/online_retailer_docker_test/NotifyCustomer/obj/",
+      "projectPath": "/Users/oliverbanizs/Projects/microservice_assignment/NotifyCustomer/NotifyCustomer.csproj",
+      "packagesPath": "/Users/oliverbanizs/.nuget/packages/",
+      "outputPath": "/Users/oliverbanizs/Projects/microservice_assignment/NotifyCustomer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/belakovacs/.nuget/NuGet/NuGet.Config"
+        "/Users/oliverbanizs/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+HQ/NV3mCWlcFDXcmADShN0dtfo8Yi9noA6cHfKu12zUn3+GMCBGCOQ4rTAzQ5XlJNxC8oEkySD1GYnN61qxnw==",
+  "dgSpecHash": "CLVpemcdh8FhHk5zXjStgHVscwtIX+E39EHzRhzUICWPNK0NqTcpcI7kvlvgE8Zl7iHYqwD6ZuJ/NNKkvEvo5Q==",
   "success": true,
-  "projectFilePath": "/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/SharedModels.csproj",
+  "projectFilePath": "/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/SharedModels.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
