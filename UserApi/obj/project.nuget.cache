@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "P2uhG8PBLyeXoHZzVXu+hPNLBzhxaCa5HyANRMtvinS28jhnfHrByIxtnIb5o9Y69LE7w+8B9Trj+6CuU2+etw==",
+  "dgSpecHash": "/s6EtpNI9/JY7NXUnOB9sszBGBI1eEXNo7ru9JKLVxd0UTtLkXGwXbiw4ymEzeI64TGxxnUb9mCMs7iRaeE6Bw==",
   "success": true,
   "projectFilePath": "/Users/oliverbanizs/Projects/microservice_assignment/UserApi/UserApi.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "/Users/oliverbanizs/.nuget/packages/microsoft.entityframeworkcore/6.0.10/microsoft.entityframeworkcore.6.0.10.nupkg.sha512",
     "/Users/oliverbanizs/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.10/microsoft.entityframeworkcore.abstractions.6.0.10.nupkg.sha512",
     "/Users/oliverbanizs/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.10/microsoft.entityframeworkcore.analyzers.6.0.10.nupkg.sha512",
+    "/Users/oliverbanizs/.nuget/packages/microsoft.entityframeworkcore.inmemory/6.0.10/microsoft.entityframeworkcore.inmemory.6.0.10.nupkg.sha512",
     "/Users/oliverbanizs/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "/Users/oliverbanizs/.nuget/packages/microsoft.extensions.caching.abstractions/6.0.0/microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "/Users/oliverbanizs/.nuget/packages/microsoft.extensions.caching.memory/6.0.1/microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",

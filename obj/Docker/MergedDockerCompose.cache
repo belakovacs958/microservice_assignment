@@ -1,50 +1,61 @@
+name: dockercompose9001595536057769445
 services:
   orderapi:
     build:
-      context: /Volumes/T7 Touch/suli/online_retailer_microservices_assignment
+      context: /Users/oliverbanizs/Projects/microservice_assignment
       dockerfile: OrderApi/Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ASPNETCORE_URLS: https://+:443;http://+:80
     image: orderapi
+    networks:
+      default: null
     ports:
-    - published: 8080
+    - mode: ingress
       target: 80
-    - published: 8443
-      target: 443
-    volumes:
-    - /Users/belakovacs/.aspnet/https:/root/.aspnet/https:ro
-    - /Users/belakovacs/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+      protocol: tcp
   productapi:
     build:
-      context: /Volumes/T7 Touch/suli/online_retailer_microservices_assignment
+      context: /Users/oliverbanizs/Projects/microservice_assignment
       dockerfile: ProductApi/Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ASPNETCORE_URLS: https://+:443;http://+:80
     image: productapi
+    networks:
+      default: null
     ports:
-    - published: 5080
+    - mode: ingress
       target: 80
-    - published: 5443
-      target: 443
-    volumes:
-    - /Users/belakovacs/.aspnet/https:/root/.aspnet/https:ro
-    - /Users/belakovacs/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+      protocol: tcp
   userapi:
     build:
-      context: /Volumes/T7 Touch/suli/online_retailer_microservices_assignment
+      context: /Users/oliverbanizs/Projects/microservice_assignment
       dockerfile: UserApi/Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: https://+:443;http://+:80
     image: userapi
+    networks:
+      default: null
     ports:
-    - published: 6080
+    - mode: ingress
       target: 80
-    - published: 6443
+      protocol: tcp
+    - mode: ingress
       target: 443
+      protocol: tcp
     volumes:
-    - /Users/belakovacs/.aspnet/https:/root/.aspnet/https:ro
-    - /Users/belakovacs/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
-version: '3.4'
+    - type: bind
+      source: /Users/oliverbanizs/.aspnet/https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: /Users/oliverbanizs/.microsoft/usersecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+networks:
+  default:
+    name: dockercompose9001595536057769445_default

@@ -1,0 +1,10 @@
+/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/bin/Release/netstandard2.1/SharedModels.deps.json
+/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/bin/Release/netstandard2.1/SharedModels.dll
+/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/bin/Release/netstandard2.1/SharedModels.pdb
+/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/obj/Release/netstandard2.1/SharedModels.csproj.AssemblyReference.cache
+/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/obj/Release/netstandard2.1/SharedModels.GeneratedMSBuildEditorConfig.editorconfig
+/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/obj/Release/netstandard2.1/SharedModels.AssemblyInfoInputs.cache
+/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/obj/Release/netstandard2.1/SharedModels.AssemblyInfo.cs
+/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/obj/Release/netstandard2.1/SharedModels.csproj.CoreCompileInputs.cache
+/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/obj/Release/netstandard2.1/SharedModels.dll
+/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/obj/Release/netstandard2.1/SharedModels.pdb

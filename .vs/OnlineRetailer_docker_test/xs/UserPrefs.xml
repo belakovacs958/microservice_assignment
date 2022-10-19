@@ -1,26 +1,19 @@
-﻿<Properties StartupConfiguration="{733B275E-C8D4-46F7-9500-8E195050164E}|Default" GitUserInfo="UsingGIT">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{733B275E-C8D4-46F7-9500-8E195050164E}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="UserApi/Controllers/UserController.cs">
-    <Files>
-      <File FileName="UserApi/Models/UserConverter.cs" Line="9" Column="26" />
-      <File FileName="UserApi/Models/IConverter.cs" Line="1" Column="1" />
-      <File FileName="UserApi/Controllers/UserController.cs" Line="16" Column="21" />
-      <File FileName="UserApi/Program.cs" Line="21" Column="24" />
-      <File FileName="SharedModels/UserDto.cs" Line="15" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="OnlineRetailer_docker_test" expanded="True">
-            <Node name="SharedModels" expanded="True" />
+            <Node name="OrderApi" expanded="True">
+              <Node name="Infrastructure" expanded="True" />
+            </Node>
             <Node name="UserApi" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True">
-                <Node name="UserController.cs" selected="True" />
-              </Node>
-              <Node name="Models" expanded="True" />
+              <Node name="Infrastructure" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -33,5 +26,5 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>
