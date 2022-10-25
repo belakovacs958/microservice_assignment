@@ -41,6 +41,16 @@ namespace OrderApi.Controllers
             return new ObjectResult(item);
         }
 
+        // GET orders/1 by user
+        [HttpGet("ordersOfCustomer/{uid}", Name = "GetOrdersOfCustomer")]
+        public IEnumerable<Order> GetOrdersOfCustomer(int uid)
+        {
+
+            //TODO create method in repository
+
+            return repository.GetByCustomer(uid);
+        }
+
         // POST orders
         [HttpPost]
         public IActionResult Post([FromBody]Order order)

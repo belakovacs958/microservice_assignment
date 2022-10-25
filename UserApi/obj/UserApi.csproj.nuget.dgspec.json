@@ -1,20 +1,73 @@
 {
   "format": 1,
   "restore": {
-    "/Volumes/T7 Touch/suli/online_retailer_docker_test/UserApi/UserApi.csproj": {}
+    "/Volumes/T7/VisualStudioProjects/microservice_assignment/UserApi/UserApi.csproj": {}
   },
   "projects": {
-    "/Volumes/T7 Touch/suli/online_retailer_docker_test/UserApi/UserApi.csproj": {
+    "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/SharedModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/T7 Touch/suli/online_retailer_docker_test/UserApi/UserApi.csproj",
-        "projectName": "UserApi",
-        "projectPath": "/Volumes/T7 Touch/suli/online_retailer_docker_test/UserApi/UserApi.csproj",
-        "packagesPath": "/Users/belakovacs/.nuget/packages/",
-        "outputPath": "/Volumes/T7 Touch/suli/online_retailer_docker_test/UserApi/obj/",
+        "projectUniqueName": "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/SharedModels.csproj",
+        "projectName": "SharedModels",
+        "projectPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/SharedModels.csproj",
+        "packagesPath": "/Users/kendeszabo/.nuget/packages/",
+        "outputPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/belakovacs/.nuget/NuGet/NuGet.Config"
+          "/Users/kendeszabo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Volumes/T7/VisualStudioProjects/microservice_assignment/UserApi/UserApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/T7/VisualStudioProjects/microservice_assignment/UserApi/UserApi.csproj",
+        "projectName": "UserApi",
+        "projectPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/UserApi/UserApi.csproj",
+        "packagesPath": "/Users/kendeszabo/.nuget/packages/",
+        "outputPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/UserApi/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kendeszabo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -25,7 +78,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/SharedModels.csproj": {
+                "projectPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/SharedModels.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -38,6 +95,22 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "EasyNetQ": {
+              "target": "Package",
+              "version": "[7.2.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

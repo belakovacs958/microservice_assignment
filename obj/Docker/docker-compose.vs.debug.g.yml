@@ -14,15 +14,15 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - /Volumes/T7 Touch/suli/online_retailer_docker_test/OrderApi:/app
-      - /Volumes/T7 Touch/suli/online_retailer_docker_test:/src
-      - /Users/belakovacs/vsdbg/vs2017u5:/remote_debugger:rw
-      - /Users/belakovacs/.nuget/packages/:/root/.nuget/packages:ro
+      - /Volumes/T7/VisualStudioProjects/microservice_assignment/OrderApi:/app
+      - /Volumes/T7/VisualStudioProjects/microservice_assignment:/src
+      - /Users/kendeszabo/vsdbg/vs2017u5:/remote_debugger:rw
+      - /Users/kendeszabo/.nuget/packages/:/root/.nuget/packages:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"/app/bin/Debug/net6.0/OrderApi.dll\""
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"/app/bin/Release/net6.0/OrderApi.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
@@ -39,15 +39,15 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - /Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi:/app
-      - /Volumes/T7 Touch/suli/online_retailer_docker_test:/src
-      - /Users/belakovacs/vsdbg/vs2017u5:/remote_debugger:rw
-      - /Users/belakovacs/.nuget/packages/:/root/.nuget/packages:ro
+      - /Volumes/T7/VisualStudioProjects/microservice_assignment/ProductApi:/app
+      - /Volumes/T7/VisualStudioProjects/microservice_assignment:/src
+      - /Users/kendeszabo/vsdbg/vs2017u5:/remote_debugger:rw
+      - /Users/kendeszabo/.nuget/packages/:/root/.nuget/packages:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"/app/bin/Debug/net6.0/ProductApi.dll\""
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"/app/bin/Release/net6.0/ProductApi.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
@@ -65,15 +65,15 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - /Volumes/T7 Touch/suli/online_retailer_docker_test/UserApi:/app
-      - /Volumes/T7 Touch/suli/online_retailer_docker_test:/src
-      - /Users/belakovacs/vsdbg/vs2017u5:/remote_debugger:rw
-      - /Users/belakovacs/.nuget/packages/:/root/.nuget/packages:ro
+      - /Volumes/T7/VisualStudioProjects/microservice_assignment/UserApi:/app
+      - /Volumes/T7/VisualStudioProjects/microservice_assignment:/src
+      - /Users/kendeszabo/vsdbg/vs2017u5:/remote_debugger:rw
+      - /Users/kendeszabo/.nuget/packages/:/root/.nuget/packages:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"/app/bin/Debug/net6.0/UserApi.dll\""
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"/app/bin/Release/net6.0/UserApi.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true

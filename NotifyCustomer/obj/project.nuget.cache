@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xSbLq0cIICbyS2KtEoJHD+P2NjfnKh8K5Q+3v/p4V2q7oO40fYEYgDrMIMB0rGoscQiSRGIQ2JNXhopQth/HmA==",
+  "dgSpecHash": "EEF8AIm4zEaqHIVqoglF7hEPXcNP4O5CklrsLe6/twE02Jh7haAOOGxUmX0PugNKam/p16cDBrueH4KEsAG4nQ==",
   "success": true,
-  "projectFilePath": "/Volumes/T7 Touch/suli/online_retailer_docker_test/NotifyCustomer/NotifyCustomer.csproj",
+  "projectFilePath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/NotifyCustomer/NotifyCustomer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

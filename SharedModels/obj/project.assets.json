@@ -8,19 +8,19 @@
     ".NETStandard,Version=v2.1": []
   },
   "packageFolders": {
-    "/Users/belakovacs/.nuget/packages/": {}
+    "/Users/kendeszabo/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/SharedModels.csproj",
+      "projectUniqueName": "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/SharedModels.csproj",
       "projectName": "SharedModels",
-      "projectPath": "/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/SharedModels.csproj",
-      "packagesPath": "/Users/belakovacs/.nuget/packages/",
-      "outputPath": "/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/obj/",
+      "projectPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/SharedModels.csproj",
+      "packagesPath": "/Users/kendeszabo/.nuget/packages/",
+      "outputPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/belakovacs/.nuget/NuGet/NuGet.Config"
+        "/Users/kendeszabo/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"

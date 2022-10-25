@@ -7,7 +7,7 @@
     "ProductApi": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "http://localhost:59018",
+      "applicationUrl": "http://localhost:13214",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

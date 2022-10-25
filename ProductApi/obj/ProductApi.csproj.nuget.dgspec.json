@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/ProductApi.csproj": {}
+    "/Volumes/T7/VisualStudioProjects/microservice_assignment/ProductApi/ProductApi.csproj": {}
   },
   "projects": {
-    "/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/ProductApi.csproj": {
+    "/Volumes/T7/VisualStudioProjects/microservice_assignment/ProductApi/ProductApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/ProductApi.csproj",
+        "projectUniqueName": "/Volumes/T7/VisualStudioProjects/microservice_assignment/ProductApi/ProductApi.csproj",
         "projectName": "ProductApi",
-        "projectPath": "/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/ProductApi.csproj",
-        "packagesPath": "/Users/belakovacs/.nuget/packages/",
-        "outputPath": "/Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/obj/",
+        "projectPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/ProductApi/ProductApi.csproj",
+        "packagesPath": "/Users/kendeszabo/.nuget/packages/",
+        "outputPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/ProductApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/belakovacs/.nuget/NuGet/NuGet.Config"
+          "/Users/kendeszabo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/SharedModels.csproj": {
-                "projectPath": "/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/SharedModels.csproj"
+              "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/SharedModels.csproj": {
+                "projectPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/SharedModels.csproj"
               }
             }
           }
@@ -82,17 +82,17 @@
         }
       }
     },
-    "/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/SharedModels.csproj": {
+    "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/SharedModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/SharedModels.csproj",
+        "projectUniqueName": "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/SharedModels.csproj",
         "projectName": "SharedModels",
-        "projectPath": "/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/SharedModels.csproj",
-        "packagesPath": "/Users/belakovacs/.nuget/packages/",
-        "outputPath": "/Volumes/T7 Touch/suli/online_retailer_docker_test/SharedModels/obj/",
+        "projectPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/SharedModels.csproj",
+        "packagesPath": "/Users/kendeszabo/.nuget/packages/",
+        "outputPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/belakovacs/.nuget/NuGet/NuGet.Config"
+          "/Users/kendeszabo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
