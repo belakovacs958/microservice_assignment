@@ -4,7 +4,7 @@ using System.Linq;
 using UserApi.Models;
 using System;
 using UserApi.Data;
-using UserApi.Data;
+
 
 namespace UserApi.Data
 {
