@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using OrderApi.Data;
 using OrderApi.Infrastructure;
 using SharedModels;
+using System.Net.Http.Json;
 
 namespace OrderApi.Controllers
 {
@@ -14,6 +15,7 @@ namespace OrderApi.Controllers
     {
         IOrderRepository repository;
         IMessagePublisher messagePublisher;
+        HttpClient httpClient = new HttpClient();
 
         public OrdersController(IRepository<Order> repos,
             IMessagePublisher publisher)
@@ -53,12 +55,43 @@ namespace OrderApi.Controllers
 
         // POST orders
         [HttpPost]
-        public IActionResult Post([FromBody]Order order)
+        public async Task<IActionResult> PostAsync([FromBody]Order order)
         {
+
+            bool areOrderedProductsAvailable = false;
+            bool doesCustomerExistvar = false;
             if (order == null)
             {
                 return BadRequest();
             }
+
+
+            foreach (var orderline in order.OrderLines)
+            {
+
+               areOrderedProductsAvailable =  await isProductAvailable(orderline.ProductId, orderline.Quantity); 
+                if (areOrderedProductsAvailable == false)
+                {
+                    break;
+                }
+
+            }
+
+            doesCustomerExistvar = await doesCustomerExist((int)order.customerId);
+
+
+            if (doesCustomerExistvar && areOrderedProductsAvailable)
+            {
+                // TODO implement: proceedes with order process
+
+                Console.WriteLine("everything is fine");
+            }
+            else
+            {
+                //TODO implement: breaks out of process and publishes order rejected message to
+                Console.WriteLine("not everything is fine");
+            }
+
 
             try
             {
@@ -69,7 +102,7 @@ namespace OrderApi.Controllers
                 // Publish OrderStatusChangedMessage. 
                 messagePublisher.PublishOrderCreatedMessage(
                     newOrder.customerId, newOrder.Id, newOrder.OrderLines);
-
+                //TODO impement messagePublisher.PublishOrderRejectedMessage
 
                 // Wait until order status is "completed"
                 bool completed = false;
@@ -156,6 +189,53 @@ namespace OrderApi.Controllers
             throw new NotImplementedException();
 
             // Add code to implement this method.
+        }
+
+
+        public async Task<bool> isProductAvailable(int productId, int productQuantity)
+        {
+
+            try
+            {
+                ProductDto response  = await httpClient.GetFromJsonAsync<ProductDto>("http://192.168.5.110:8080/products/" + productId);
+                Console.WriteLine("this is the number of items in stock" + response.ItemsInStock.ToString());
+                if (response != null && response.ItemsInStock > productQuantity)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+          
+        }
+
+        public async Task<bool> doesCustomerExist(int customerId)
+        {
+
+            try
+            {
+                UserDto response = await httpClient.GetFromJsonAsync<UserDto>("http://192.168.5.110:7080/user/" + customerId);
+       
+                if (response != null)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
         }
 
     }
