@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "/Users/oliverbanizs/.nuget/packages/": {}
+    "/Users/kendeszabo/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/oliverbanizs/Projects/microservice_assignment/NotifyCustomer/NotifyCustomer.csproj",
+      "projectUniqueName": "/Volumes/T7/VisualStudioProjects/microservice_assignment/NotifyCustomer/NotifyCustomer.csproj",
       "projectName": "NotifyCustomer",
-      "projectPath": "/Users/oliverbanizs/Projects/microservice_assignment/NotifyCustomer/NotifyCustomer.csproj",
-      "packagesPath": "/Users/oliverbanizs/.nuget/packages/",
-      "outputPath": "/Users/oliverbanizs/Projects/microservice_assignment/NotifyCustomer/obj/",
+      "projectPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/NotifyCustomer/NotifyCustomer.csproj",
+      "packagesPath": "/Users/kendeszabo/.nuget/packages/",
+      "outputPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/NotifyCustomer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/oliverbanizs/.nuget/NuGet/NuGet.Config"
+        "/Users/kendeszabo/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"

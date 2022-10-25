@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/oliverbanizs/Projects/microservice_assignment/ProductApi/ProductApi.csproj": {}
+    "/Volumes/T7/VisualStudioProjects/microservice_assignment/ProductApi/ProductApi.csproj": {}
   },
   "projects": {
-    "/Users/oliverbanizs/Projects/microservice_assignment/ProductApi/ProductApi.csproj": {
+    "/Volumes/T7/VisualStudioProjects/microservice_assignment/ProductApi/ProductApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/oliverbanizs/Projects/microservice_assignment/ProductApi/ProductApi.csproj",
+        "projectUniqueName": "/Volumes/T7/VisualStudioProjects/microservice_assignment/ProductApi/ProductApi.csproj",
         "projectName": "ProductApi",
-        "projectPath": "/Users/oliverbanizs/Projects/microservice_assignment/ProductApi/ProductApi.csproj",
-        "packagesPath": "/Users/oliverbanizs/.nuget/packages/",
-        "outputPath": "/Users/oliverbanizs/Projects/microservice_assignment/ProductApi/obj/",
+        "projectPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/ProductApi/ProductApi.csproj",
+        "packagesPath": "/Users/kendeszabo/.nuget/packages/",
+        "outputPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/ProductApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/oliverbanizs/.nuget/NuGet/NuGet.Config"
+          "/Users/kendeszabo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/SharedModels.csproj": {
-                "projectPath": "/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/SharedModels.csproj"
+              "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/SharedModels.csproj": {
+                "projectPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/SharedModels.csproj"
               }
             }
           }
@@ -82,17 +82,17 @@
         }
       }
     },
-    "/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/SharedModels.csproj": {
+    "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/SharedModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/SharedModels.csproj",
+        "projectUniqueName": "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/SharedModels.csproj",
         "projectName": "SharedModels",
-        "projectPath": "/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/SharedModels.csproj",
-        "packagesPath": "/Users/oliverbanizs/.nuget/packages/",
-        "outputPath": "/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/obj/",
+        "projectPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/SharedModels.csproj",
+        "packagesPath": "/Users/kendeszabo/.nuget/packages/",
+        "outputPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/oliverbanizs/.nuget/NuGet/NuGet.Config"
+          "/Users/kendeszabo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"

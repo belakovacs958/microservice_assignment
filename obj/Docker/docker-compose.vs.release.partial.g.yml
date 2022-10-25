@@ -8,7 +8,7 @@ services:
         com.microsoft.created-by: "visual-studio"
         com.microsoft.visual-studio.project-name: "OrderApi"
     volumes:
-      - /Users/oliverbanizs/vsdbg/vs2017u5:/remote_debugger:rw
+      - /Users/kendeszabo/vsdbg/vs2017u5:/remote_debugger:rw
 
     entrypoint: tail -f /dev/null
     labels:
@@ -25,7 +25,7 @@ services:
         com.microsoft.created-by: "visual-studio"
         com.microsoft.visual-studio.project-name: "ProductApi"
     volumes:
-      - /Users/oliverbanizs/vsdbg/vs2017u5:/remote_debugger:rw
+      - /Users/kendeszabo/vsdbg/vs2017u5:/remote_debugger:rw
 
     entrypoint: tail -f /dev/null
     labels:
@@ -43,7 +43,7 @@ services:
         com.microsoft.created-by: "visual-studio"
         com.microsoft.visual-studio.project-name: "UserApi"
     volumes:
-      - /Users/oliverbanizs/vsdbg/vs2017u5:/remote_debugger:rw
+      - /Users/kendeszabo/vsdbg/vs2017u5:/remote_debugger:rw
 
     entrypoint: tail -f /dev/null
     labels:

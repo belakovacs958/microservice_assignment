@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CLVpemcdh8FhHk5zXjStgHVscwtIX+E39EHzRhzUICWPNK0NqTcpcI7kvlvgE8Zl7iHYqwD6ZuJ/NNKkvEvo5Q==",
+  "dgSpecHash": "ZEbfjZAUWJxZ8vZIhiBt28LzyTh+aWIlevj3MBKCjqYJYmr27IuPmsMhmGSnJG/Eb/bIUCeXIjf/VBlMwjEfNQ==",
   "success": true,
-  "projectFilePath": "/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/SharedModels.csproj",
+  "projectFilePath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/SharedModels.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

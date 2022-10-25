@@ -1131,19 +1131,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/oliverbanizs/.nuget/packages/": {}
+    "/Users/kendeszabo/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/oliverbanizs/Projects/microservice_assignment/OrderApi/OrderApi.csproj",
+      "projectUniqueName": "/Volumes/T7/VisualStudioProjects/microservice_assignment/OrderApi/OrderApi.csproj",
       "projectName": "OrderApi",
-      "projectPath": "/Users/oliverbanizs/Projects/microservice_assignment/OrderApi/OrderApi.csproj",
-      "packagesPath": "/Users/oliverbanizs/.nuget/packages/",
-      "outputPath": "/Users/oliverbanizs/Projects/microservice_assignment/OrderApi/obj/",
+      "projectPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/OrderApi/OrderApi.csproj",
+      "packagesPath": "/Users/kendeszabo/.nuget/packages/",
+      "outputPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/OrderApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/oliverbanizs/.nuget/NuGet/NuGet.Config"
+        "/Users/kendeszabo/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -1155,8 +1155,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/SharedModels.csproj": {
-              "projectPath": "/Users/oliverbanizs/Projects/microservice_assignment/SharedModels/SharedModels.csproj"
+            "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/SharedModels.csproj": {
+              "projectPath": "/Volumes/T7/VisualStudioProjects/microservice_assignment/SharedModels/SharedModels.csproj"
             }
           }
         }

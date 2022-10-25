@@ -106,3 +106,6 @@
 /Volumes/T7 Touch/suli/online_retailer_docker_test/OrderApi/obj/Debug/OrderApi.pdb
 /Volumes/T7 Touch/suli/online_retailer_docker_test/OrderApi/obj/Debug/OrderApi.genruntimeconfig.cache
 /Volumes/T7 Touch/suli/online_retailer_docker_test/OrderApi/obj/Debug/ref/OrderApi.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/OrderApi/obj/Debug/OrderApi.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/OrderApi/obj/Debug/refint/OrderApi.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/OrderApi/obj/Debug/OrderApi.pdb

@@ -106,3 +106,6 @@
 /Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/obj/Debug/ProductApi.pdb
 /Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/obj/Debug/ProductApi.genruntimeconfig.cache
 /Volumes/T7 Touch/suli/online_retailer_docker_test/ProductApi/obj/Debug/ref/ProductApi.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/ProductApi/obj/Debug/ProductApi.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/ProductApi/obj/Debug/refint/ProductApi.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/ProductApi/obj/Debug/ProductApi.pdb

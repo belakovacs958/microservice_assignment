@@ -14,10 +14,10 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - /Users/oliverbanizs/Projects/microservice_assignment/OrderApi:/app
-      - /Users/oliverbanizs/Projects/microservice_assignment:/src
-      - /Users/oliverbanizs/vsdbg/vs2017u5:/remote_debugger:rw
-      - /Users/oliverbanizs/.nuget/packages/:/root/.nuget/packages:ro
+      - /Volumes/T7/VisualStudioProjects/microservice_assignment/OrderApi:/app
+      - /Volumes/T7/VisualStudioProjects/microservice_assignment:/src
+      - /Users/kendeszabo/vsdbg/vs2017u5:/remote_debugger:rw
+      - /Users/kendeszabo/.nuget/packages/:/root/.nuget/packages:ro
 
     entrypoint: tail -f /dev/null
     labels:
@@ -39,10 +39,10 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - /Users/oliverbanizs/Projects/microservice_assignment/ProductApi:/app
-      - /Users/oliverbanizs/Projects/microservice_assignment:/src
-      - /Users/oliverbanizs/vsdbg/vs2017u5:/remote_debugger:rw
-      - /Users/oliverbanizs/.nuget/packages/:/root/.nuget/packages:ro
+      - /Volumes/T7/VisualStudioProjects/microservice_assignment/ProductApi:/app
+      - /Volumes/T7/VisualStudioProjects/microservice_assignment:/src
+      - /Users/kendeszabo/vsdbg/vs2017u5:/remote_debugger:rw
+      - /Users/kendeszabo/.nuget/packages/:/root/.nuget/packages:ro
 
     entrypoint: tail -f /dev/null
     labels:
@@ -65,10 +65,10 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - /Users/oliverbanizs/Projects/microservice_assignment/UserApi:/app
-      - /Users/oliverbanizs/Projects/microservice_assignment:/src
-      - /Users/oliverbanizs/vsdbg/vs2017u5:/remote_debugger:rw
-      - /Users/oliverbanizs/.nuget/packages/:/root/.nuget/packages:ro
+      - /Volumes/T7/VisualStudioProjects/microservice_assignment/UserApi:/app
+      - /Volumes/T7/VisualStudioProjects/microservice_assignment:/src
+      - /Users/kendeszabo/vsdbg/vs2017u5:/remote_debugger:rw
+      - /Users/kendeszabo/.nuget/packages/:/root/.nuget/packages:ro
 
     entrypoint: tail -f /dev/null
     labels:
