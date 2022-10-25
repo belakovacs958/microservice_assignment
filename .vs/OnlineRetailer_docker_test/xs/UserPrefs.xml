@@ -1,15 +1,28 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{733B275E-C8D4-46F7-9500-8E195050164E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="OrderApi/Infrastructure/MessagePublisher.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="OrderApi/Controllers/OrdersController.cs">
     <Files>
-      <File FileName="OrderApi/Infrastructure/MessagePublisher.cs" Line="23" Column="10" />
+      <File FileName="OrderApi/Controllers/OrdersController.cs" Line="82" Column="1" />
+      <File FileName="SharedModels/ProductDto.cs" Line="5" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="OnlineRetailer_docker_test" expanded="True">
-            <Node name="OrderApi" expanded="True">
-              <Node name="Infrastructure" expanded="True" />
+            <Node name="docker-compose" expanded="True">
+              <Node name="docker-compose.yml" expanded="True" />
             </Node>
+            <Node name="OrderApi" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+            </Node>
+            <Node name="ProductApi" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+            <Node name="SharedModels" expanded="True" />
+            <Node name="UserApi" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -18,11 +31,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
 </Properties>
