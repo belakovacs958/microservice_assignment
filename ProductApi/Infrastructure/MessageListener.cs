@@ -30,7 +30,8 @@ namespace ProductApi.Infrastructure
             {
                 bus.PubSub.Subscribe<OrderCreatedMessage>("productApiHkCreated", 
                     HandleOrderCreated);
-
+                bus.PubSub.Subscribe<OrderShippedMessage>("orderApiHkShipped", 
+                    HandleOrderShipped);
                // bus.PubSub.Subscribe<OrderStatusChangedMessage>("productApiHkCompleted",
                 //    HandleOrderCompleted, x => x.WithTopic("completed"));
 
@@ -74,8 +75,32 @@ namespace ProductApi.Infrastructure
               }
           }
         */
-       
 
+        private void HandleOrderShipped(OrderShippedMessage message)
+        {
+            // A service scope is created to get an instance of the product repository.
+            // When the service scope is disposed, the product repository instance will
+            // also be disposed.
+            Console.WriteLine("handle order shipped called from product api");
+            using (var scope = provider.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                var productRepos = services.GetService<IRepository<Product>>();
+
+                // Reserve items of ordered product (should be a single transaction).
+                // Beware that this operation is not idempotent.
+                foreach (var orderLine in message.OrderLines)
+                {
+                    var product = productRepos.Get(orderLine.ProductId);
+                    product.ItemsReserved -= orderLine.Quantity;
+                    product.ItemsInStock -= orderLine.Quantity;
+                    productRepos.Edit(product);
+                }
+            }
+        }
+
+
+        // TODO this handles when a product is created not when an order is created has to be examined
         private void HandleOrderCreated(OrderCreatedMessage message)
         {
             // A service scope is created to get an instance of the product repository.

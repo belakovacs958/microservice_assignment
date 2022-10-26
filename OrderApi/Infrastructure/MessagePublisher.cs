@@ -42,5 +42,19 @@ namespace OrderApi.Infrastructure
             bus.PubSub.Publish(message);
         }
 
+        public void PublishOrderShippedMessage(int customerId, int orderId,
+            IList<OrderLine> orderLines)
+        {
+            var message = new OrderShippedMessage
+            {
+                CustomerId = customerId,
+                OrderId = orderId,
+                OrderLines = orderLines
+            };
+
+            bus.PubSub.Publish(message);
+
+        }
+
     }
 }

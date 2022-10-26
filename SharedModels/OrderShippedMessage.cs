@@ -2,7 +2,7 @@
 
 namespace SharedModels
 {
-    public class OrderShippedMessage
+    public class OrderCreatedMessage
     {
         public int? CustomerId { get; set; }
         public int OrderId { get; set; }
