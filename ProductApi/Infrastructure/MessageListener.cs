@@ -32,17 +32,19 @@ namespace ProductApi.Infrastructure
                     HandleOrderCreated);
                 bus.PubSub.Subscribe<OrderShippedMessage>("orderApiHkShipped", 
                     HandleOrderShipped);
-               // bus.PubSub.Subscribe<OrderStatusChangedMessage>("productApiHkCompleted",
+                bus.PubSub.Subscribe<OrderCancelledMessage>("orderApiHkCancelled",
+                    HandleOrderCancelled);
+                // bus.PubSub.Subscribe<OrderStatusChangedMessage>("productApiHkCompleted",
                 //    HandleOrderCompleted, x => x.WithTopic("completed"));
 
-              //  bus.PubSub.Subscribe<OrderStatusChangedMessage>("productApiHkCancelled",
-                  //  HandleOrderCancelled, x => x.WithTopic("cacelled"));
+                //  bus.PubSub.Subscribe<OrderStatusChangedMessage>("productApiHkCancelled",
+                //  HandleOrderCancelled, x => x.WithTopic("cacelled"));
 
-              //  bus.PubSub.Subscribe<OrderStatusChangedMessage>("productApiHkShipped",
-                  //  HandleOrderCancelled, x => x.WithTopic("shipped"));
+                //  bus.PubSub.Subscribe<OrderStatusChangedMessage>("productApiHkShipped",
+                //  HandleOrderCancelled, x => x.WithTopic("shipped"));
 
-              //  bus.PubSub.Subscribe<OrderStatusChangedMessage>("productApiHkPaid",
-                  //  HandleOrderCancelled, x => x.WithTopic("paid"));
+                //  bus.PubSub.Subscribe<OrderStatusChangedMessage>("productApiHkPaid",
+                //  HandleOrderCancelled, x => x.WithTopic("paid"));
 
 
                 // Block the thread so that it will not exit and stop subscribing.
@@ -94,6 +96,30 @@ namespace ProductApi.Infrastructure
                     var product = productRepos.Get(orderLine.ProductId);
                     product.ItemsReserved -= orderLine.Quantity;
                     product.ItemsInStock -= orderLine.Quantity;
+                    productRepos.Edit(product);
+                }
+            }
+        }
+        private void HandleOrderCancelled(OrderCancelledMessage message)
+        {
+            // A service scope is created to get an instance of the product repository.
+            // When the service scope is disposed, the product repository instance will
+            // also be disposed.
+            Console.WriteLine("handle order cancelled called from product api");
+            using (var scope = provider.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                var productRepos = services.GetService<IRepository<Product>>();
+
+                // Reserve items of ordered product (should be a single transaction).
+                // Beware that this operation is not idempotent.
+                foreach (var orderLine in message.OrderLines)
+                {
+                    var product = productRepos.Get(orderLine.ProductId);
+                    product.ItemsReserved -= orderLine.Quantity;
+                    Console.WriteLine("items reserved: " + product.ItemsReserved);
+                    Console.WriteLine("items quantity: " + orderLine.Quantity);
+
                     productRepos.Edit(product);
                 }
             }

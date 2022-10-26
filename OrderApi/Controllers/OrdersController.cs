@@ -129,43 +129,28 @@ namespace OrderApi.Controllers
         // with topic set to "cancelled".
         [HttpPut("{id}/cancel")]
         public IActionResult Cancel(int id)
-        { /*
-            if (id == null)
-            {
-                return BadRequest();
-            }
+        {
+           
 
             try
             {
-                // Create a tentative order.
-                id. = Order.OrderStatus.tentative;
-                var newOrder = repository.Edit;
+                var order = repository.Get(id);
+                if (order.Status == Order.OrderStatus.completed)
+                    // Create a tentative order.
+                    order.Status = Order.OrderStatus.cancelled;
+                repository.Edit(order);
 
                 // Publish OrderStatusChangedMessage. 
-                messagePublisher.PublishOrderCreatedMessage(
-                    newOrder.customerId, newOrder.Id, newOrder.OrderLines);
+                messagePublisher.PublishOrderCancelledMessage(
+                    (int)order.customerId, order.Id, order.OrderLines );
 
 
-                // Wait until order status is "completed"
-                bool completed = false;
-                while (!completed)
-                {
-                    var tentativeOrder = repository.Get(newOrder.Id);
-                    if (tentativeOrder.Status == Order.OrderStatus.completed)
-                        completed = true;
-                    Thread.Sleep(100);
-                }
-
-                return CreatedAtRoute("GetOrder", new { id = newOrder.Id }, newOrder);
+                return StatusCode(201);
             }
             catch
             {
                 return StatusCode(500, "An error happened. Try again.");
             }
-
-            */
-
-            throw new NotImplementedException();
 
         }
 
@@ -175,6 +160,8 @@ namespace OrderApi.Controllers
         [HttpPut("{id}/ship")]
         public IActionResult Put([FromBody] Order order)
         {
+
+            // TODO implement ship same as cancel so it doesnt need an order input, only id
             if (order == null)
             {
                 return BadRequest();
