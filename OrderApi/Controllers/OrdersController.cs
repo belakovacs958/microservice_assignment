@@ -173,9 +173,29 @@ namespace OrderApi.Controllers
         // This action method ships an order and publishes an OrderStatusChangedMessage.
         // with topic set to "shipped".
         [HttpPut("{id}/ship")]
-        public IActionResult Ship(int id)
+        public IActionResult Put([FromBody] Order order)
         {
-            throw new NotImplementedException();
+            if (order == null)
+            {
+                return BadRequest();
+            }
+            try
+            {
+                // Create a tentative order.
+                order.Status = Order.OrderStatus.shipped;
+                repository.Edit(order);
+
+                // Publish OrderStatusChangedMessage. 
+                messagePublisher.PublishOrderShippedMessage(
+                    (int)order.customerId, order.Id, order.OrderLines);
+
+
+                return StatusCode(201);
+            }
+            catch
+            {
+                return StatusCode(500, "An error happened. Try again.");
+            }
 
             // Add code to implement this method.
         }
@@ -192,7 +212,7 @@ namespace OrderApi.Controllers
         }
 
 
-        public async Task<bool> isProductAvailable(int productId, int productQuantity)
+        private async Task<bool> isProductAvailable(int productId, int productQuantity)
         {
 
             try
