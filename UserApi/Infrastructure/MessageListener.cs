@@ -7,6 +7,7 @@ using SharedModels;
 
 namespace UserApi.Infrastructure
 {
+    
     public class MessageListener
     {
         IServiceProvider provider;
@@ -18,7 +19,7 @@ namespace UserApi.Infrastructure
             this.provider = provider;
             this.connectionString = connectionString;
         }
-
+        //TODO implement listentning to user credit change
         public void Start()
         {
             using (bus = RabbitHutch.CreateBus(connectionString))
