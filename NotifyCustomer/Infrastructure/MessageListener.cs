@@ -48,7 +48,15 @@ namespace ProductApi.Infrastructure
 
         private void HandleOrderPaid(OrderPaidMessage message)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("this is your invoice: ");
+            double numberOfItems = 0;
+            Console.WriteLine("you have paid for your order");
+
+            foreach (var orderline in message.OrderLines)
+            {
+                numberOfItems += orderline.Quantity;
+            }
+            Console.WriteLine("the sum of your items is: " + numberOfItems.ToString());
         }
 
         private void HandleOrderRejected(OrderRejectedMessage message)

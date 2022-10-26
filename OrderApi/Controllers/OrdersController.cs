@@ -193,9 +193,26 @@ namespace OrderApi.Controllers
         [HttpPut("{id}/pay")]
         public IActionResult Pay(int id)
         {
-            throw new NotImplementedException();
 
-            // Add code to implement this method.
+            try
+            {
+                var order = repository.Get(id);
+             
+                    // Create a tentative order.
+                 order.Status = Order.OrderStatus.paid;
+                repository.Edit(order);
+
+                
+                messagePublisher.PublishOrderPaidMessage(
+                    (int)order.customerId, order.Id, order.OrderLines);
+
+
+                return StatusCode(201);
+            }
+            catch
+            {
+                return StatusCode(500, "An error happened. Try again.");
+            }
         }
 
 
