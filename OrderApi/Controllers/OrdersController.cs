@@ -47,9 +47,6 @@ namespace OrderApi.Controllers
         [HttpGet("ordersOfCustomer/{uid}", Name = "GetOrdersOfCustomer")]
         public IEnumerable<Order> GetOrdersOfCustomer(int uid)
         {
-
-            //TODO create method in repository
-
             return repository.GetByCustomer(uid);
         }
 
@@ -57,6 +54,7 @@ namespace OrderApi.Controllers
         [HttpPost]
         public async Task<IActionResult> PostAsync([FromBody]Order order)
         {
+            // TODO implement credit check on use
 
             bool areOrderedProductsAvailable = false;
             bool doesCustomerExistvar = false;
@@ -82,45 +80,47 @@ namespace OrderApi.Controllers
 
             if (doesCustomerExistvar && areOrderedProductsAvailable)
             {
-                // TODO implement: proceedes with order process
+          
+                try
+                {
+                    // Create a tentative order.
+                    order.Status = Order.OrderStatus.tentative;
+                    var newOrder = repository.Add(order);
 
+                    // Publish OrderStatusChangedMessage. 
+                    messagePublisher.PublishOrderCreatedMessage(
+                        newOrder.customerId, newOrder.Id, newOrder.OrderLines);
+                    
+                    
+                    // Wait until order status is "completed"
+                    bool completed = false;
+                    while (!completed)
+                    {
+                        var tentativeOrder = repository.Get(newOrder.Id);
+                        if (tentativeOrder.Status == Order.OrderStatus.completed)
+                            completed = true;
+                        Thread.Sleep(100);
+                    }
+
+                    return CreatedAtRoute("GetOrder", new { id = newOrder.Id }, newOrder);
+                }
+                catch
+                {
+                    return StatusCode(500, "An error happened. Try again.");
+                }
                 Console.WriteLine("everything is fine");
             }
             else
             {
-                //TODO implement: breaks out of process and publishes order rejected message to
+      
                 Console.WriteLine("not everything is fine");
+
+                messagePublisher.PublishOrderRejectedMessage((int)order.customerId,order.Id);
+                return StatusCode(500, "We dont have enough of a product or user does not exist");
             }
 
 
-            try
-            {
-                // Create a tentative order.
-                order.Status = Order.OrderStatus.tentative;
-                var newOrder = repository.Add(order);
-
-                // Publish OrderStatusChangedMessage. 
-                messagePublisher.PublishOrderCreatedMessage(
-                    newOrder.customerId, newOrder.Id, newOrder.OrderLines);
-                //TODO impement messagePublisher.PublishOrderRejectedMessage
-
-                // Wait until order status is "completed"
-                bool completed = false;
-                while (!completed)
-                {
-                    var tentativeOrder = repository.Get(newOrder.Id);
-                    if (tentativeOrder.Status == Order.OrderStatus.completed)
-                        completed = true;
-                    Thread.Sleep(100);
-                }
-
-                return CreatedAtRoute("GetOrder", new { id = newOrder.Id }, newOrder);
-            }
-            catch
-            {
-                return StatusCode(500, "An error happened. Try again.");
-            }
-
+           
         }
 
 

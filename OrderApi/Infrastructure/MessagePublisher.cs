@@ -31,5 +31,16 @@ namespace OrderApi.Infrastructure
             bus.PubSub.Publish(message);
         }
 
+        public void PublishOrderRejectedMessage(int customerId, int orderId)
+        {
+            var message = new OrderRejectedMessage
+            {
+                CustomerId = customerId,
+                OrderId = orderId,
+            };
+
+            bus.PubSub.Publish(message);
+        }
+
     }
 }

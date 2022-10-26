@@ -53,29 +53,29 @@ namespace ProductApi.Infrastructure
 
         }
 
-      /*  private void HandleOrderCompleted(OrderStatusChangedMessage message)
-        {
-            // A service scope is created to get an instance of the product repository.
-            // When the service scope is disposed, the product repository instance will
-            // also be disposed.
-            using (var scope = provider.CreateScope())
-            {
-                var services = scope.ServiceProvider;
-                var productRepos = services.GetService<IRepository<Product>>();
+        /*  private void HandleOrderCompleted(OrderStatusChangedMessage message)
+          {
+              // A service scope is created to get an instance of the product repository.
+              // When the service scope is disposed, the product repository instance will
+              // also be disposed.
+              using (var scope = provider.CreateScope())
+              {
+                  var services = scope.ServiceProvider;
+                  var productRepos = services.GetService<IRepository<Product>>();
 
-                // Reserve items of ordered product (should be a single transaction).
-                // Beware that this operation is not idempotent.
-                foreach (var orderLine in message.OrderLines)
-                {
-                    var product = productRepos.Get(orderLine.ProductId);
-                    product.ItemsReserved += orderLine.Quantity;
-                    productRepos.Edit(product);
-                }
-            }
-        }
-      */
-     
-      
+                  // Reserve items of ordered product (should be a single transaction).
+                  // Beware that this operation is not idempotent.
+                  foreach (var orderLine in message.OrderLines)
+                  {
+                      var product = productRepos.Get(orderLine.ProductId);
+                      product.ItemsReserved += orderLine.Quantity;
+                      productRepos.Edit(product);
+                  }
+              }
+          }
+        */
+       
+
         private void HandleOrderCreated(OrderCreatedMessage message)
         {
             // A service scope is created to get an instance of the product repository.
@@ -85,7 +85,7 @@ namespace ProductApi.Infrastructure
             {
                 var services = scope.ServiceProvider;
                 var productRepos = services.GetService<IRepository<Product>>();
-
+                // TODO maybe remove the checking and order accepted and rejected message publish from here as it is done in the order api controller with HTTP
                 if (ProductItemsAvailable(message.OrderLines, productRepos))
                 {
                     // Reserve items and publish an OrderAcceptedMessage

@@ -28,7 +28,8 @@ namespace OrderApi.Infrastructure
             {
                 bus.PubSub.Subscribe<OrderAcceptedMessage>("orderApiHkAccepted",
                     HandleOrderAccepted);
-
+                bus.PubSub.Subscribe<OrderCreatedMessage>("orderApiHkCreated",
+                    HandleOrderCreated);
                 bus.PubSub.Subscribe<OrderRejectedMessage>("orderApiHkRejected",
                     HandleOrderRejected);
 
@@ -43,6 +44,8 @@ namespace OrderApi.Infrastructure
 
         private void HandleOrderAccepted(OrderAcceptedMessage message)
         {
+            // TODO has to be modified so doesnt automatically changes a created order to completed order
+
             using (var scope = provider.CreateScope())
             {
                 var services = scope.ServiceProvider;
@@ -55,8 +58,18 @@ namespace OrderApi.Infrastructure
             }
         }
 
+        private void HandleOrderCreated(OrderCreatedMessage message)
+        {
+            // TODO has to be modified so doesnt automatically changes a created order to completed order
+
+            Console.WriteLine("order id from handle order created : " +message.OrderId);
+        }
+
         private void HandleOrderRejected(OrderRejectedMessage message)
         {
+            Console.WriteLine("Listener ran");
+            Console.WriteLine("order id: " + message.OrderId);
+
             using (var scope = provider.CreateScope())
             {
                 var services = scope.ServiceProvider;
