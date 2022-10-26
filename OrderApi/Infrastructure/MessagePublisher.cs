@@ -56,5 +56,17 @@ namespace OrderApi.Infrastructure
 
         }
 
+        public void PublishOrderCancelledMessage(int customerId, int orderId, IList<OrderLine> orderLines)
+        {
+            var message = new OrderCancelledMessage
+            {
+                CustomerId = customerId,
+                OrderId = orderId,
+                OrderLines = orderLines
+            };
+
+            bus.PubSub.Publish(message);
+        }
+
     }
 }
