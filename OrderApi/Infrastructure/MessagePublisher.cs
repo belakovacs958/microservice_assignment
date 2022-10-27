@@ -21,6 +21,7 @@ namespace OrderApi.Infrastructure
 
         public void PublishOrderCreatedMessage(int? customerId, int orderId, IList<OrderLine> orderLines)
         {
+            Console.WriteLine("PublishOrderCreatedMessage called from MessagePublisher order api");
             var message = new OrderCreatedMessage
             { 
                 CustomerId = customerId,

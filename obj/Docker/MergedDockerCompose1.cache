@@ -1,8 +1,39 @@
-name: dockercompose9001595536057769445
+name: dockercompose9427228592904385671
 services:
+  notifycustomer:
+    build:
+      context: /Volumes/T7/VisualStudioProjects/microservice_assignment
+      dockerfile: NotifyCustomer/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: NotifyCustomer
+    container_name: NotifyCustomer
+    entrypoint:
+    - tail
+    - -f
+    - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: notifycustomer
+    labels:
+      com.microsoft.visual-studio.project-name: NotifyCustomer
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/NotifyCustomer.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    tty: true
+    volumes:
+    - type: bind
+      source: /Users/kendeszabo/vsdbg/vs2017u5
+      target: /remote_debugger
+      bind:
+        create_host_path: true
   orderapi:
     build:
-      context: /Users/oliverbanizs/Projects/microservice_assignment
+      context: /Volumes/T7/VisualStudioProjects/microservice_assignment
       dockerfile: OrderApi/Dockerfile
       labels:
         com.microsoft.created-by: visual-studio
@@ -27,17 +58,22 @@ services:
     ports:
     - mode: ingress
       target: 80
+      published: "6080"
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      published: "6443"
       protocol: tcp
     tty: true
     volumes:
     - type: bind
-      source: /Users/oliverbanizs/vsdbg/vs2017u5
+      source: /Users/kendeszabo/vsdbg/vs2017u5
       target: /remote_debugger
       bind:
         create_host_path: true
   productapi:
     build:
-      context: /Users/oliverbanizs/Projects/microservice_assignment
+      context: /Volumes/T7/VisualStudioProjects/microservice_assignment
       dockerfile: ProductApi/Dockerfile
       labels:
         com.microsoft.created-by: visual-studio
@@ -62,17 +98,22 @@ services:
     ports:
     - mode: ingress
       target: 80
+      published: "8080"
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      published: "8443"
       protocol: tcp
     tty: true
     volumes:
     - type: bind
-      source: /Users/oliverbanizs/vsdbg/vs2017u5
+      source: /Users/kendeszabo/vsdbg/vs2017u5
       target: /remote_debugger
       bind:
         create_host_path: true
   userapi:
     build:
-      context: /Users/oliverbanizs/Projects/microservice_assignment
+      context: /Volumes/T7/VisualStudioProjects/microservice_assignment
       dockerfile: UserApi/Dockerfile
       labels:
         com.microsoft.created-by: visual-studio
@@ -98,29 +139,31 @@ services:
     ports:
     - mode: ingress
       target: 80
+      published: "7080"
       protocol: tcp
     - mode: ingress
       target: 443
+      published: "7443"
       protocol: tcp
     tty: true
     volumes:
     - type: bind
-      source: /Users/oliverbanizs/vsdbg/vs2017u5
+      source: /Users/kendeszabo/vsdbg/vs2017u5
       target: /remote_debugger
       bind:
         create_host_path: true
     - type: bind
-      source: /Users/oliverbanizs/.aspnet/https
+      source: /Users/kendeszabo/.aspnet/https
       target: /root/.aspnet/https
       read_only: true
       bind:
         create_host_path: true
     - type: bind
-      source: /Users/oliverbanizs/.microsoft/usersecrets
+      source: /Users/kendeszabo/.microsoft/usersecrets
       target: /root/.microsoft/usersecrets
       read_only: true
       bind:
         create_host_path: true
 networks:
   default:
-    name: dockercompose9001595536057769445_default
+    name: dockercompose9427228592904385671_default

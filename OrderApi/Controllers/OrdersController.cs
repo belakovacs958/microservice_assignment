@@ -54,15 +54,17 @@ namespace OrderApi.Controllers
         [HttpPost]
         public async Task<IActionResult> PostAsync([FromBody]Order order)
         {
-            // TODO implement credit check on use
+            // TODO implement credit check on user
 
             bool areOrderedProductsAvailable = false;
             bool doesCustomerExistvar = false;
+            bool isCreditStandingGOOD = false; 
             if (order == null)
             {
                 return BadRequest();
             }
 
+            isCreditStandingGOOD = await checkCustomerCreditStanding((int)order.customerId);
 
             foreach (var orderline in order.OrderLines)
             {
@@ -78,7 +80,7 @@ namespace OrderApi.Controllers
             doesCustomerExistvar = await doesCustomerExist((int)order.customerId);
 
 
-            if (doesCustomerExistvar && areOrderedProductsAvailable)
+            if (doesCustomerExistvar && areOrderedProductsAvailable && isCreditStandingGOOD)
             {
           
                 try
@@ -93,6 +95,7 @@ namespace OrderApi.Controllers
                     
                     
                     // Wait until order status is "completed"
+                    
                     bool completed = false;
                     while (!completed)
                     {
@@ -101,7 +104,7 @@ namespace OrderApi.Controllers
                             completed = true;
                         Thread.Sleep(100);
                     }
-
+                    
                     return CreatedAtRoute("GetOrder", new { id = newOrder.Id }, newOrder);
                 }
                 catch
@@ -116,7 +119,7 @@ namespace OrderApi.Controllers
                 Console.WriteLine("not everything is fine");
 
                 messagePublisher.PublishOrderRejectedMessage((int)order.customerId,order.Id);
-                return StatusCode(500, "We dont have enough of a product or user does not exist");
+                return StatusCode(500, "Order rejected");
             }
 
 
@@ -249,6 +252,29 @@ namespace OrderApi.Controllers
                 if (response != null)
                 {
                     return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+        }
+        public async Task<bool> checkCustomerCreditStanding(int customerId)
+        {
+
+            try
+            {
+                UserDto response = await httpClient.GetFromJsonAsync<UserDto>("http://192.168.5.110:7080/user/" + customerId);
+               
+                if (response != null && !(response.CreditStanding.Equals("BAD")))
+                {
+                    
+                   return true;
                 }
                 else
                 {

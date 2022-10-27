@@ -4,6 +4,7 @@ using EasyNetQ;
 using Microsoft.Extensions.DependencyInjection;
 using UserApi.Data;
 using SharedModels;
+using UserApi.Models;
 
 namespace UserApi.Infrastructure
 {
@@ -24,7 +25,13 @@ namespace UserApi.Infrastructure
         {
             using (bus = RabbitHutch.CreateBus(connectionString))
             {
-               //write subscribing functions 
+                bus.PubSub.Subscribe<OrderCreatedMessage>("orderApiHkAccepted",
+                    HandleOrderCreated);
+
+                bus.PubSub.Subscribe<OrderPaidMessage>("orderApiHkPaid",
+                    HandleOrderPaid);
+                
+                //write subscribing functions 
                 // Block the thread so that it will not exit and stop subscribing.
                 lock (this)
                 {
@@ -32,6 +39,38 @@ namespace UserApi.Infrastructure
                 }
             }
 
+        }
+
+        private void HandleOrderCreated(OrderCreatedMessage message)
+        {
+            
+            Console.WriteLine("handle order create called from user api");
+            using (var scope = provider.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                var productRepos = services.GetService<IRepository<User>>();
+
+                var user = productRepos.Get((int)message.CustomerId);
+
+                user.CreditStanding = "BAD";
+                productRepos.Edit(user);
+       
+            }
+        }
+        private void HandleOrderPaid(OrderPaidMessage message)
+        {
+
+            Console.WriteLine("handle order paid called from user api");
+            using (var scope = provider.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                var productRepos = services.GetService<IRepository<User>>();
+
+                var user = productRepos.Get((int)message.CustomerId);
+
+                user.CreditStanding = "GOOD";
+                productRepos.Edit(user);
+            }
         }
     }
 }

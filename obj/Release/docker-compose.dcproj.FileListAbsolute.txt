@@ -31,10 +31,10 @@
 /Users/oliverbanizs/Projects/microservice_assignment/obj/Release/docker-compose.dcproj.AssemblyReference.cache
 /Users/oliverbanizs/Projects/microservice_assignment/obj/Release/docker-compose.dcproj.CoreCompileInputs.cache
 /Users/oliverbanizs/Projects/microservice_assignment/obj/Release/docker-compose.dcproj.CopyComplete
-/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/appsettings.Development.json
-/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/appsettings.json
 /Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/ProductApi.deps.json
 /Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/ProductApi.runtimeconfig.json
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/appsettings.Development.json
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/appsettings.json
 /Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/ProductApi
 /Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/OrderApi.deps.json
 /Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/OrderApi.runtimeconfig.json
@@ -42,6 +42,10 @@
 /Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/UserApi.deps.json
 /Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/UserApi.runtimeconfig.json
 /Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/UserApi
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/NotifyCustomer.deps.json
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/NotifyCustomer.runtimeconfig.json
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/NotifyCustomer
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/NotifyCustomer.dll
 /Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/OrderApi.dll
 /Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/ProductApi.dll
 /Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/UserApi.dll
@@ -60,6 +64,7 @@
 /Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/ProductApi.pdb
 /Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/OrderApi.pdb
 /Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/UserApi.pdb
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/NotifyCustomer.pdb
 /Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Release/SharedModels.pdb
 /Volumes/T7/VisualStudioProjects/microservice_assignment/obj/Release/docker-compose.dcproj.AssemblyReference.cache
 /Volumes/T7/VisualStudioProjects/microservice_assignment/obj/Release/docker-compose.dcproj.CoreCompileInputs.cache
