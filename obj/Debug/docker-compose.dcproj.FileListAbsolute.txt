@@ -89,3 +89,41 @@
 /Volumes/T7 Touch/suli/online_retailer_docker_test/obj/Debug/docker-compose.dcproj.AssemblyReference.cache
 /Volumes/T7 Touch/suli/online_retailer_docker_test/obj/Debug/docker-compose.dcproj.CoreCompileInputs.cache
 /Volumes/T7 Touch/suli/online_retailer_docker_test/obj/Debug/docker-compose.dcproj.CopyComplete
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/appsettings.Development.json
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/appsettings.json
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/ProductApi.deps.json
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/ProductApi.runtimeconfig.json
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/ProductApi
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/OrderApi.deps.json
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/OrderApi.runtimeconfig.json
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/OrderApi
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/UserApi.deps.json
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/UserApi.runtimeconfig.json
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/UserApi
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/NotifyCustomer.deps.json
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/NotifyCustomer.runtimeconfig.json
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/NotifyCustomer
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/NotifyCustomer.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/OrderApi.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/ProductApi.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/UserApi.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/Microsoft.EntityFrameworkCore.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/SharedModels.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/EasyNetQ.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/Swashbuckle.AspNetCore.Swagger.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/Microsoft.EntityFrameworkCore.InMemory.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/Microsoft.Extensions.DependencyInjection.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/Microsoft.Extensions.Caching.Memory.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/RabbitMQ.Client.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/Microsoft.OpenApi.dll
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/ProductApi.pdb
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/OrderApi.pdb
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/UserApi.pdb
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/NotifyCustomer.pdb
+/Volumes/T7/VisualStudioProjects/microservice_assignment/bin/Debug/SharedModels.pdb
+/Volumes/T7/VisualStudioProjects/microservice_assignment/obj/Debug/docker-compose.dcproj.AssemblyReference.cache
+/Volumes/T7/VisualStudioProjects/microservice_assignment/obj/Debug/docker-compose.dcproj.CoreCompileInputs.cache
+/Volumes/T7/VisualStudioProjects/microservice_assignment/obj/Debug/docker-compose.dcproj.CopyComplete

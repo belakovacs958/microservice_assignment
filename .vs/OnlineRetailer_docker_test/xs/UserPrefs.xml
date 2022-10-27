@@ -1,32 +1,36 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{733B275E-C8D4-46F7-9500-8E195050164E}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
-  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OrderApi/Infrastructure/IMessagePublisher.cs">
+﻿<Properties StartupConfiguration="{733B275E-C8D4-46F7-9500-8E195050164E}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="OrderApi/Controllers/OrdersController.cs">
     <Files>
-      <File FileName="OrderApi/Infrastructure/MessagePublisher.cs" Line="77" Column="17" />
-      <File FileName="OrderApi/Controllers/OrdersController.cs" Line="1" Column="1" />
-      <File FileName="NotifyCustomer/Infrastructure/MessageListener.cs" Line="51" Column="57" />
-      <File FileName="OrderApi/Infrastructure/IMessagePublisher.cs" Line="1" Column="1" />
-      <File FileName="SharedModels/OrderPaidMessage.cs" Line="9" Column="43" />
+      <File FileName="UserApi/Infrastructure/MessageListener.cs" Line="40" Column="14" />
+      <File FileName="OrderApi/Controllers/OrdersController.cs" Line="272" Column="105" />
+      <File FileName="OrderApi/Infrastructure/MessageListener.cs" Line="34" Column="79" />
+      <File FileName="OrderApi/Infrastructure/IMessagePublisher.cs" Line="8" Column="14" />
+      <File FileName="OrderApi/Infrastructure/MessagePublisher.cs" Line="12" Column="57" />
+      <File FileName="OrderApi/Data/OrderApiContext.cs" Line="1" Column="1" />
+      <File FileName="OrderApi/Data/OrderRepository.cs" Line="1" Column="1" />
+      <File FileName="UserApi/Data/UserRepository.cs" Line="23" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="OnlineRetailer_docker_test" expanded="True">
-            <Node name="NotifyCustomer" expanded="True">
-              <Node name="Infrastructure" expanded="True" />
-            </Node>
             <Node name="OrderApi" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Infrastructure" expanded="True">
-                <Node name="IMessagePublisher.cs" selected="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
               </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Infrastructure" expanded="True" />
             </Node>
             <Node name="SharedModels" expanded="True" />
             <Node name="UserApi" expanded="True">
               <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
               <Node name="Infrastructure" expanded="True" />
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -36,8 +40,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.NotifyCustomer PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

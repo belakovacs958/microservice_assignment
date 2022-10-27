@@ -26,13 +26,14 @@ namespace OrderApi.Infrastructure
         {
             using (bus = RabbitHutch.CreateBus(connectionString))
             {
+                
                 bus.PubSub.Subscribe<OrderAcceptedMessage>("orderApiHkAccepted",
                     HandleOrderAccepted);
                 bus.PubSub.Subscribe<OrderCreatedMessage>("orderApiHkCreated",
                     HandleOrderCreated);
                 bus.PubSub.Subscribe<OrderRejectedMessage>("orderApiHkRejected",
-                    HandleOrderRejected);
-
+                   HandleOrderRejected);
+                
                 // Block the thread so that it will not exit and stop subscribing.
                 lock (this)
                 {
@@ -41,7 +42,7 @@ namespace OrderApi.Infrastructure
             }
 
         }
-
+        
         private void HandleOrderAccepted(OrderAcceptedMessage message)
         {
             // TODO has to be modified so doesnt automatically changes a created order to completed order
@@ -64,12 +65,12 @@ namespace OrderApi.Infrastructure
 
             Console.WriteLine("order id from handle order created : " +message.OrderId);
         }
-
+        
         private void HandleOrderRejected(OrderRejectedMessage message)
         {
             Console.WriteLine("Listener ran");
             Console.WriteLine("order id: " + message.OrderId);
-
+           
             using (var scope = provider.CreateScope())
             {
                 var services = scope.ServiceProvider;
@@ -79,5 +80,7 @@ namespace OrderApi.Infrastructure
                 orderRepos.Remove(message.OrderId);
             }
         }
+        
+        
     }
 }

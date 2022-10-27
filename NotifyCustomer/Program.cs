@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Builder;
 using ProductApi.Infrastructure;
 
 
+
 var builder = WebApplication.CreateBuilder(args);
 string cloudAMQPConnectionString =
    "host=hawk.rmq.cloudamqp.com;virtualHost=aaqlhcqa;username=aaqlhcqa;password=dmojgvjNDOFGSV9WtVqJjcql0wnG6AtP";
